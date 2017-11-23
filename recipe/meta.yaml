@@ -10,7 +10,8 @@ source:
   sha256: 52425f905518247c685fc64c5fdba6e1e74443c8562e141c8de56059be0e31da
 
 build:
-  number: 0
+  number: 1
+  noarch: python
   script: python setup.py install --single-version-externally-managed --record record.txt
 
 requirements:
@@ -24,6 +25,8 @@ requirements:
     - setuptools_scm
 
 test:
+  requires:
+    - setuptools
   imports:
     - setuptools_scm_git_archive
 
