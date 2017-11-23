@@ -25,6 +25,8 @@ requirements:
     - setuptools_scm
 
 test:
+  requires:
+    - setuptools
   imports:
     - setuptools_scm_git_archive
 
