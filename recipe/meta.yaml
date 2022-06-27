@@ -1,4 +1,4 @@
-{% set version = "1.1" %}
+{% set version = "1.2.3" %}
 
 package:
   name: setuptools_scm_git_archive
@@ -7,12 +7,12 @@ package:
 source:
   fn: setuptools_scm_git_archive-{{ version }}.tar.gz
   url: https://pypi.python.org/packages/source/s/setuptools_scm_git_archive/setuptools_scm_git_archive-{{ version }}.tar.gz
-  sha256: 6026f61089b73fa1b5ee737e95314f41cb512609b393530385ed281d0b46c062
+  sha256: 22fa341c5ea448b0f41b309aab667cc60c8d3bd63735033dcabe45e91a291817
 
 build:
   number: 0
   noarch: python
-  script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed -vv "
+  script: '{{ PYTHON }} -m pip install . --no-deps --ignore-installed -vv '
 
 requirements:
   host:
@@ -35,7 +35,7 @@ about:
   license: MIT
   license_family: MIT
   license_file: LICENSE
-  summary: 'setuptools_scm plugin for git archives'
+  summary: setuptools_scm plugin for git archives
 
 extra:
   recipe-maintainers:
