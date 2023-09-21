@@ -1,11 +1,11 @@
-About setuptools_scm_git_archive
-================================
+About setuptools_scm_git_archive-feedstock
+==========================================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/setuptools_scm_git_archive-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/Changaco/setuptools_scm_git_archive/
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/setuptools_scm_git_archive-feedstock/blob/main/LICENSE.txt)
 
 Summary: setuptools_scm plugin for git archives
 
