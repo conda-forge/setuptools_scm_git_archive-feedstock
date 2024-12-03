@@ -19,17 +19,20 @@ requirements:
     - python {{ python_min }}
     - pip
     - setuptools
-    - setuptools_scm
+    - setuptools_scm <8
   run:
     - python >={{ python_min }}
-    - setuptools_scm
+    - setuptools_scm <8
 
 test:
   requires:
     - setuptools
     - python {{ python_min }}
+    - pip
   imports:
     - setuptools_scm_git_archive
+  commands:
+    - pip check
 
 about:
   home: https://github.com/Changaco/setuptools_scm_git_archive/
